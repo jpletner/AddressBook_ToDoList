@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <title>
+      Address Book and To Do List
+    </title>
+
+  </head>
+
+  <body>
+<!--Address Book-->
+    <div class="container">
+      <h1>Address Book</h1>
+<!-- ROW ONE-->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</lable>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</lable>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+            <div class="form-group">
+              <label for="new-address">Address</lable>
+              <input type="text" class="form-control" id="new-address">
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </form>
+
+        <h2>Contacts:</h2>
+        <ul id="contacts">
+        </ul>
+
+      </div>
+    </div>
+<!-- ROW TWO -->
+    <div class='row'>
+      <div class="col-md-6">
+        <div id="show-contact">
+          <h2></h2>
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Address: <span class="address"></span></p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Container DIV -->
+
+<!--To Do List-->
+  <div class="container">
+    <h1>Honey Do List</h1>
+
+<!-- ROW ONE-->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add an activity:</h2>
+          <form id="newActivity">
+            <div class="form-group well">
+              <label for="title">Title:</label>
+              <input id="title" type="text" placeholder="enter activity name"></input>
+              <label for="activity">Activity:</label>
+              <input id="activity" type="text" placeholder="enter activity"></input>
+              <input type="submit" class="btn btn-primary addActivity" value="Add"></input>
+              <!--<input id="activity" type="button" class="btn btn-primary removeActivity" value="Remove"></input>-->
+
+              <h3>To Do List:</h3>
+              <ul id="activityList" class="checkbox">
+              </ul>
+
+</body>
+
+<html>
