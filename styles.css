@@ -14,3 +14,8 @@
 .strike {
   text-decoration: line-through;
 }
+
+h1 {
+    color: dimgray;
+    margin-bottom: 20px;
+}

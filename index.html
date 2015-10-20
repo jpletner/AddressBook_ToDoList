@@ -14,12 +14,15 @@
   </head>
 
   <body>
-<!--Address Book-->
+
     <div class="container">
-      <h1>Address Book</h1>
+      
 <!-- ROW ONE-->
       <div class="row">
+        
+         <!--Contacts--> 
         <div class="col-md-6">
+          <h1>Address Book</h1>
           <h2>Add a contact:</h2>
           <form id="new-contact">
             <div class="form-group">
@@ -35,15 +38,35 @@
               <input type="text" class="form-control" id="new-address">
             </div>
             <button type="submit" class="btn">Add</button>
-        </form>
+        </form> <!--Contacts-->
 
         <h2>Contacts:</h2>
         <ul id="contacts">
         </ul>
+      </div> <!--To Do List--> 
+     
+      <!--To Do List-->    
+      <div class="col-md-6">
+        <h1>Honey Do List</h1>
+          <h2>Add an activity:</h2>
+          <form id="newActivity">
+            <div class="form-group well">
+              <label for="title">Title:</label>
+              <input id="title" type="text" placeholder="enter activity name"></input>
+              <label for="activity">Description:</label>
+              <input id="activity" type="text" placeholder="enter task details"></input>
+              <input type="submit" class="btn btn-primary addActivity" value="Add"></input>
+              <!--<input id="activity" type="button" class="btn btn-primary removeActivity" value="Remove"></input>-->
 
-      </div>
-    </div>
-<!-- ROW TWO -->
+              <h3>To Do List:</h3>
+              <ul id="activityList" class="checkbox">
+              </ul>
+            </div>
+      </div> <!--To Do List--> 
+      
+    </div> <!--end row1 -->
+    
+<!-- ROW TWO --> <!--Show Contacts-->
     <div class='row'>
       <div class="col-md-6">
         <div id="show-contact">
@@ -56,28 +79,9 @@
       </div>
     </div>
 
-  </div> <!-- Container DIV -->
+  </div> 
 
-<!--To Do List-->
-  <div class="container">
-    <h1>Honey Do List</h1>
 
-<!-- ROW ONE-->
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Add an activity:</h2>
-          <form id="newActivity">
-            <div class="form-group well">
-              <label for="title">Title:</label>
-              <input id="title" type="text" placeholder="enter activity name"></input>
-              <label for="activity">Activity:</label>
-              <input id="activity" type="text" placeholder="enter activity"></input>
-              <input type="submit" class="btn btn-primary addActivity" value="Add"></input>
-              <!--<input id="activity" type="button" class="btn btn-primary removeActivity" value="Remove"></input>-->
-
-              <h3>To Do List:</h3>
-              <ul id="activityList" class="checkbox">
-              </ul>
 
 </body>
 
